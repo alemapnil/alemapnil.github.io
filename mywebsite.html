@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>my website</title>
+<style>
+body{
+    margin: 0px;
+    background-color:#D2CFCF;
+    background-size:cover;
+    min-width: 383px;
+}
+.row1{
+    background-color:#1770B7;
+    text-align: center;
+    padding: 10px;
+    color:#ffffff;
+    height: 80px;
+    line-height: 80px;
+    font-size:30px;
+    font-weight: bold;
+    font-family: 微軟正黑體;;
+    width:auto;
+}
+.row2{
+    background-color:#1770B7;
+    text-align: center;
+    padding: 10px;
+    color:#ffffff;
+    max-height: 100%;
+    line-height: 80px;
+    font-size:18px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    margin: 0px 0px 0px 0px;
+    width: auto;
+
+}
+.photo{
+    background-image: url("photo.jpg");
+    background-position: center center;
+    background-size:cover;
+    display: block;
+    opacity: 0.8; 
+    width: auto;
+}
+.logo{
+    text-align: center;
+    padding-top: 267px;
+    padding-bottom: 267px;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight:normal;
+    font-family: 微軟正黑體;
+    line-height: 60px;
+    opacity: 1;
+}
+.frame{
+    width: 765px;
+    color:midnightblue;
+    margin: auto;
+}
+.box{
+    width: 340px;padding: 10px;margin: 5px;display: inline-block;vertical-align: top;
+}
+.hide{
+    display: none;
+}
+.work_div{
+    height: 40px;
+}
+#score{
+    margin-top:10px;
+}
+#btn{
+    cursor: pointer;
+    width: 50px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color:#1770B7;
+    border: none;
+    color: whitesmoke;
+}
+#work{
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #D2CFCF;;
+    border:solid #1770B7;
+    color:whitesmoke;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 765px){
+    .frame{width:auto; text-align: center;}
+    .row1.photo.row2{width:auto }
+}
+
+</style>
+<script>
+function menu(){
+    var x=document.getElementById("score");
+    x.classList.toggle("hide");
+    if(document.getElementById("btn").innerHTML=="收回"){
+        document.getElementById("btn").innerHTML="展開"
+    }
+    else{
+        document.getElementById("btn").innerHTML="收回"
+    }
+
+
+}
+</script>
+</head>
+<body>
+<div class="row1">林婉茹的網站</div>
+<div class="photo" >
+    <div class="logo">
+        面對未知</br>勇於挑戰
+    </div>
+</div>
+
+<div class='frame'>
+<div id="work_div"><button id="work"><a href="https://github.com/alemapnil/Crawler">作品集</a></button></div>
+</div>
+<div class='frame'>
+<div class='box'>
+<h2>I'm Pamela.</h2>
+純文組畢業的我，具備英、日語能力</br>
+有商管、電子商務的工作經歷</br>
+面對未知，不怕挑戰的我</br>
+不斷培養第二專長--基礎程式設計</br>
+未來職涯朝軟體工程師發展</br>
+複合技能的π型人才，是現代社會所需</br>
+因此林婉茹是您最佳的選擇。</br>
+</div>
+<div class='box'>
+<h2>Work Experience</h2>
+<table>
+    <tr>
+        <td>
+            國立政治大學社會學系
+        </td>
+        <td>
+            畢業
+        </td>
+    </tr>
+    <tr>
+        <td>
+            雄獅旅行社
+        </td>
+        <td>
+            品保
+        </td>
+    </tr>
+    <tr>
+        <td>
+            日本東海光學株式會社_台灣總代理商
+        </td>
+        <td>
+            採購
+        </td>
+    </tr>
+    <tr>
+        <td>
+            李長榮化學工業股份有限公司
+        </td>
+        <td>
+            國貿
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Mr.Bed 倍得先生床墊
+        </td>
+        <td>
+            電子商務
+        </td>
+    </tr>
+</table>
+</div>
+<div class='box'>
+<h2>Activity</h2>
+<ul style='list-style-type: square;'>
+    <li>
+        台大ccClub 2019 秋季python 讀書會成員
+        <ul style='list-style-type: circle;'>
+            <li>
+                培養大量解題python能力
+            </li>
+            <li>
+                訓練debug時不屈不撓之精神
+            </li>
+            <li>
+                參與小組python爬蟲專題告
+            </li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class='box'>
+<h2>Skill</h2>
+<ul style='list-style-type: square;'>
+    <li>
+        英語, 日語 <button onclick="menu()" id="btn" class="btn1"> 展開</button>
+        <div id="score" class="hide"/>TOEIC 730； 英語のほかに、日本語もできます。どぞよろしく お願いします。
+    </li>
+    <li>
+        python, flask, web crawler
+    </li>
+    <li>
+        javascript, html&css
+    </li>
+    <li>
+        excel, sap
+    </li>
+
+</ul>
+</div>
+</div>
+<div class="row2">聯絡我: alemapnil@gmail.com/ 0933-293-249</div>
+</body>
+
+</html>
